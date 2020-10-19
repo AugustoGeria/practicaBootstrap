@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos Bootstrap</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/bootstrap-solid.svg" alt="logo Bootstrap" width="45px" class="mx-2"> Bootstrap 5D</a>
+            <!-- boton hamburguesa, todo lo que salga debajo aparece ahi -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#elementosMenu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="elementosMenu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Iinicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Productos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="container border border-primary">
+        <h1>Prueba de bootstrap</h1>
+        <p>Contenedor</p>
+    </section>
+    <section class="container-fluid border border-danger my-4">
+        <p>Contenedor fluido</p>
+    </section>
+    <section class="container">
+        <article>
+            <h1>Titulo 1</h1>
+            <hr>
+            <h2 class="display-4">Ejemplo de Display 1 a 4</h2>
+            <article class="my-5">
+                <h3>Colores y Textos</h3>
+                <hr>
+                <p class="text-primary">primary</p>
+                <p class="text-danger">danger</p>
+                <p class="text-warning">warning</p>
+                <p class="text-success">success</p>
+                <p class="text-info">info</p>
+                <p class="text-dark">dark</p>
+                <p class="text-light bg-warning">light</p>
+            </article>
+            <article>
+                <h3>Botones</h3>
+                <button class="btn btn-primary">Boton de prueba</button>
+                <button class="btn btn-warning mx-2">Boton de prueba</button>
+                <button class="btn btn-success mx-2">Boton de prueba</button>
+                <button class="btn btn-danger mx-2">Boton de prueba</button>
+                <button class="btn btn-info mx-2">Boton de prueba</button>
+                <button class="btn btn-dark mx-2 my-4">Boton de prueba</button>
+
+                <button class="btn btn-outline-primary">Boton de prueba</button>
+                <button class="btn btn-outline-warning mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-success mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-danger mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-info mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-dark mx-2">Boton de prueba</button>
+                <hr>
+                <h3>Boton deshabilitado</h3>
+                <!-- boton deshabilitado como cuando aun no puedo accionarlo(no complete el acuerdo los terminos y condiciones) -->
+                <button class="btn btn-primary disabled ">Boton de prueba</button>
+                <button class="btn btn-warning disabled mx-2">Boton de prueba</button>
+                <button class="btn btn-success disabled mx-2">Boton de prueba</button>
+                <button class="btn btn-danger disabled mx-2">Boton de prueba</button>
+                <button class="btn btn-info disabled mx-2">Boton de prueba</button>
+                <button class="btn btn-dark disabled mx-2 my-4">Boton de prueba</button>
+
+                <button class="btn btn-outline-primary disabled  ">Boton de prueba</button>
+                <button class="btn btn-outline-warning disabled mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-success disabled mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-danger disabled mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-info disabled mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-dark disabled mx-2">Boton de prueba</button>
+                <hr>
+                <h3>Boton Activado</h3>
+                <!-- como si estuviera presionando el boton -->
+                <button class="btn btn-primary active">Boton de prueba</button>
+                <button class="btn btn-warning active mx-2">Boton de prueba</button>
+                <button class="btn btn-success active mx-2">Boton de prueba</button>
+                <button class="btn btn-danger active mx-2">Boton de prueba</button>
+                <button class="btn btn-info active mx-2">Boton de prueba</button>
+                <button class="btn btn-dark active mx-2 my-4 ">Boton de prueba</button>
+
+                <button class="btn btn-outline-primary active ">Boton de prueba</button>
+                <button class="btn btn-outline-warning active mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-success active mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-danger active mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-info active mx-2">Boton de prueba</button>
+                <button class="btn btn-outline-dark active mx-2">Boton de prueba </button>
+                <hr>
+                <h3>Tamaño de botones</h3>
+                <button class="btn btn-primary btn-sm">Boton de pequeño</button>
+                <button class="btn btn-primary">Boton de normal</button>
+                <button class="btn btn-primary btn-lg">Boton de grande</button>
+            </article>
+            <article class="my-5">
+                <h3>Lista</h3>
+                <hr>
+                <ul class="list-group">
+                    <li class="list-group-item list-group-item-primary">Item1</li>
+                    <li class="list-group-item">Item2</li>
+                    <li class="list-group-item">Item3</li>
+                    <li class="list-group-item">Item4</li>
+                    <li class="list-group-item">Item5</li>
+                </ul>
+
+            </article>
+            <article>
+                <h3>Sistema de Grillas</h3>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 border border-danger">col1</div>
+                    <div class="col-sm-12 col-md-4 border border-danger">col2</div>
+                    <div class="col-sm-12 col-md-4 border border-danger">col3</div>
+                </div>
+            </article>
+        </article>
+        <article class="my-4">
+            <h3>Contactos</h3>
+            <hr>
+            <!-- si pongo . row hace automaticamente  -->
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <!-- con alt z hago que quede asi una linea larga
+                        bootstrap tiene su clase para poner el ancho por ej w 100% -->
+                    <iframe class="w-100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.7559760548615!2d-58.36694498473184!3d-34.63560646669315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a334b6925e5473%3A0x1ca5b2748858b40d!2sEstadio%20Alberto%20J.%20Armando!5e0!3m2!1ses!2sar!4v1587038031029!5m2!1ses!2sar"
+                        height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                        tabindex="0"></iframe>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h4>Complete sus datos</h4>
+                    <form class="shadow p-3 mb-5 bg-white rounded">
+                        <div class="form-group">
+                            <label>Nombre y Apellido</label>
+                            <input type="text" placeholder="Juan Pere" required class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>DNI</label>
+                            <input type="number" placeholder="38145669" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="Email" placeholder="prueba@prueba.com" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Consulta</label>
+                            <textarea rows="4" placeholder="Ingrese su Consulta" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </article>
+    </section>
+    <footer class="bg-dark container-fluid">
+        <section class="mx-4 mb-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-4 text-light px-4 ">
+                    <h5 class="my-3 ">primera columna</h5>
+                    <p>
+                        <div class="20">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus debitis porro et.
+                            Officia iure sequi eligendi est necessitatibus reiciendis nulla, unde inventore expedita
+                            illo quibusdam, nesciunt rerum vero dolorem quaerat.</div>
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-4 text-light px-4 ">
+                    <h5 class="my-3">segunda columna</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati tempora deleniti sapiente
+                        iusto soluta magnam magni nostrum. Suscipit fuga fugiat laudantium laboriosam dolorem voluptas
+                        nam!</p>
+                </div>
+                <div class="col-sm-12 col-md-4 text-light px-4 ">
+                    <h5 class="my-3">tercera columna</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam excepturi deserunt ipsam tenetur
+                        non, quibusdam deleniti. Doloribus laboriosam est harum a facilis odio architecto eveniet dicta
+                        quis, repudiandae corrupti deleniti.</p>
+                </div>
+            </div>
+            <section class="mt-5 text-light text-center">
+                <hr>
+                <p> Todos los derechos reservados</p>
+            </section>
+        </section>
+    </footer>
+    <!--scrip de bootstrap-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
